@@ -4,8 +4,8 @@ A small and lightweight decoder only Large Language Model with approximately 76.
 # Contents of this Project
 This repository contains the code for the project which consists of two files:
 
-1. **'train.py'** 
-2. **'fine_tuning.py'** 
+1. **`train.py`** 
+2. **`fine_tuning.py`** 
 
 Both do as their names suggest. The first one is for training the model and the second for fine tuning it on a different dataset, to apply a particular style to it.
 
