@@ -25,8 +25,8 @@
  ''I am sorry, but I didn't. I thought you was
  
 ----------------------------------------------------------------------------
-Prompt: A woman hugging a child 
-Story:  
+**Prompt:** A woman hugging a child  
+**Story:**  
 [ Oh, I don't know what is it, and why are the only way that's what I have to get. 
  
  And who's my life's, though I have a life, my wife, and a better part of what I want to do with my mother. 
@@ -60,8 +60,8 @@ Story:
  I am so young and I want this to marry
  
 ----------------------------------------------------------------------------
-Prompt: A woman hugging a child 
-Story:  
+**Prompt:** A woman hugging a child  
+**Story:**  
 “ Hey, I ’ m not sure you can not remember that you ’ re here? ” I stammered at my feet. 
  
  “ I ’ m afraid we ’ ve been having a while since you ’ re not done. The two more about us can be able to go from home. ” 
@@ -89,8 +89,8 @@ Story:
  “ This is why I wish you were talking about.
  
 ----------------------------------------------------------------------------
-Prompt: A woman hugging a child 
-Story:  
+**Prompt:** A woman hugging a child  
+**Story:**  
 “ You aren't what you were just doing, ” the man said. 
  
  “ You said you did, ” he said. 
