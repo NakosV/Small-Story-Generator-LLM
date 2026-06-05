@@ -3,7 +3,7 @@
  - Later the model was fine tuned on about 20 mb of the writing prompts reddit dataset in order to learn to take prompts and then to give a story
 
 ----------------------------------------------------------------------------
-**Prompt:** A man in a shinking ship 
+**Prompt:** A man in a shinking ship  
 **Story:**  
 `` Do you want to get some tea in heaven, we'll have some time to see if you'll get a bit.'' 
  
