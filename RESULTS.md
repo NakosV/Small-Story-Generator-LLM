@@ -1,10 +1,10 @@
-# Here are some results from the model
+# Some extra informationa about the model
  - The model was initialy trained at a dataset of a bunch of Gutenberg books put together in order to learn that style of writing. Some of them were Mobby Dick, Sherlock Holms and many more
  - Later the model was fine tuned on about 20 mb of the writing prompts reddit dataset in order to learn to take prompts and then to give a story
 
 ----------------------------------------------------------------------------
-Prompt: A man in a shinking ship 
-Story:  
+**Prompt:** A man in a shinking ship 
+> **Story:** >  
 `` Do you want to get some tea in heaven, we'll have some time to see if you'll get a bit.'' 
  
  I started to cry. 
