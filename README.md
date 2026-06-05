@@ -4,8 +4,8 @@ A small and lightweight decoder-only Large Language Model with approximately 76.
 # Contents of this Project
 This repository contains the code for the project which consists of the two following files:
 
-1. **`train.py`** 
-2. **`fine_tuning.py`** 
+1. **`LLM-BPE.py`** 
+2. **`LLM-Generate.py`** 
 
 Both do as their names suggest. The first one is for training the model from scrathc on a dataset and the second is for fine tuning it on a different dataset, to apply a particular writing style to it.
 
