@@ -4,7 +4,7 @@
 
 ----------------------------------------------------------------------------
 **Prompt:** A man in a shinking ship 
-> **Story:** >  
+**Story:**  
 `` Do you want to get some tea in heaven, we'll have some time to see if you'll get a bit.'' 
  
  I started to cry. 
