@@ -22,8 +22,7 @@ Story:
  `` You're already talking about this, I don't want to be scared, but I just wanted it. I wasn't just so sure I was in fact that it was. 
  
  At this point, I wasn't supposed to say anything, but I still had a chance to be the next question. 
- 
- `` I am sorry, but I didn't. I thought you was
+ ''I am sorry, but I didn't. I thought you was
 ----------------------------------------------------------------------------
 Prompt: A woman hugging a child
 Story:  
