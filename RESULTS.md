@@ -3,7 +3,7 @@
  - Later the model was fine tuned on about 20 mb of the writing prompts reddit dataset in order to learn to take prompts and then to give a story
 
 ----------------------------------------------------------------------------
-Prompt: A man in a shinking ship
+Prompt: A man in a shinking ship 
 Story:  
 `` Do you want to get some tea in heaven, we'll have some time to see if you'll get a bit.'' 
  
@@ -23,8 +23,9 @@ Story:
  
  At this point, I wasn't supposed to say anything, but I still had a chance to be the next question. 
  ''I am sorry, but I didn't. I thought you was
+ 
 ----------------------------------------------------------------------------
-Prompt: A woman hugging a child
+Prompt: A woman hugging a child 
 Story:  
 [ Oh, I don't know what is it, and why are the only way that's what I have to get. 
  
@@ -57,8 +58,9 @@ Story:
  I am a bad man, too. 
  
  I am so young and I want this to marry
+ 
 ----------------------------------------------------------------------------
-Prompt: A woman hugging a child
+Prompt: A woman hugging a child 
 Story:  
 “ Hey, I ’ m not sure you can not remember that you ’ re here? ” I stammered at my feet. 
  
@@ -85,8 +87,9 @@ Story:
  “ That ’ s a lot of kids, ” 
  
  “ This is why I wish you were talking about.
+ 
 ----------------------------------------------------------------------------
-Prompt: A woman hugging a child
+Prompt: A woman hugging a child 
 Story:  
 “ You aren't what you were just doing, ” the man said. 
  
