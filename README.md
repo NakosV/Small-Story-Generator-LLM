@@ -24,4 +24,4 @@ Here I have some information on what the model was trained on and some results
 Even though I am largely finished with this project feel free to suggest improvements, address issues or fork the repository to experiment with your own fine-tuning and datasets.
 
 # Other Projects
-I have built many more projects that revolve around machine learning. If you are interested to see them **[you can click here to check them out](https://github.com/NakosV/University-Machine-Learning-Projects-Catalog)**
+I have built more projects that revolve around machine learning. If you are interested to see them **[you can click here to check them out](https://github.com/NakosV/University-Machine-Learning-Projects-Catalog)**
