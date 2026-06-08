@@ -56,9 +56,9 @@ class Head(nn.Module):
 class MultiHead_Attention(nn.Module):
     def __init__(self, number_of_heads, head_size):
         super().__init__()
-        self.heads      = nn.ModuleList([Head(head_size) for _ in range(number_of_heads)])
+        self.heads = nn.ModuleList([Head(head_size) for _ in range(number_of_heads)])
         self.projection = nn.Linear(n_emb, n_emb)
-        self.dropout    = nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         out = torch.cat([h(x) for h in self.heads], dim=-1)
@@ -81,10 +81,10 @@ class Block(nn.Module):
     def __init__(self, n_emb, n_head):
         super().__init__()
         head_size = n_emb // n_head
-        self.self_attention_heads  = MultiHead_Attention(n_head, head_size)
-        self.feed_forward          = Feed_Forward(n_emb)
-        self.layer_normalization1  = nn.LayerNorm(n_emb)
-        self.layer_normalization2  = nn.LayerNorm(n_emb)
+        self.self_attention_heads = MultiHead_Attention(n_head, head_size)
+        self.feed_forward = Feed_Forward(n_emb)
+        self.layer_normalization1 = nn.LayerNorm(n_emb)
+        self.layer_normalization2 = nn.LayerNorm(n_emb)
 
     def forward(self, x):
         x = x + self.self_attention_heads(self.layer_normalization1(x))
@@ -94,11 +94,11 @@ class Block(nn.Module):
 class LanguageModel(nn.Module):
     def __init__(self, vocabulary_size):
         super().__init__()
-        self.token_embedding_table    = nn.Embedding(vocabulary_size, n_emb)
+        self.token_embedding_table = nn.Embedding(vocabulary_size, n_emb)
         self.position_embedding_table = nn.Embedding(block_size, n_emb)
-        self.blocks                   = nn.Sequential(*[Block(n_emb, n_head=n_head) for _ in range(n_layer)])
-        self.layer_normalization_final= nn.LayerNorm(n_emb)
-        self.lm_head                  = nn.Linear(n_emb, vocabulary_size)
+        self.blocks = nn.Sequential(*[Block(n_emb, n_head=n_head) for _ in range(n_layer)])
+        self.layer_normalization_final = nn.LayerNorm(n_emb)
+        self.lm_head = nn.Linear(n_emb, vocabulary_size)
 
     def forward(self, idx, targets=None):
         B, T = idx.shape
@@ -116,15 +116,15 @@ class LanguageModel(nn.Module):
 
     def generate(self, idx, max_new_tokens, temperature=0.8, top_k=50):
         for _ in range(max_new_tokens):
-            idx_cond  = idx[:, -block_size:]
+            idx_cond = idx[:, -block_size:]
             logits, _ = self(idx_cond)
-            logits    = logits[:, -1, :] / temperature
+            logits = logits[:, -1, :] / temperature
             top_k_val = min(top_k, logits.size(-1))
             values, _ = torch.topk(logits, top_k_val)
             logits[logits < values[:, [-1]]] = float('-inf')
-            probs    = F.softmax(logits, dim=-1)
+            probs = F.softmax(logits, dim=-1)
             idx_next = torch.multinomial(probs, num_samples=1)
-            idx      = torch.cat((idx, idx_next), dim=1)
+            idx = torch.cat((idx, idx_next), dim=1)
         return idx
 
 def load_model(path):
@@ -133,7 +133,6 @@ def load_model(path):
     checkpoint = torch.load(path, map_location=device)
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
-    print("Model loaded!\n")
     return model
 
 # A prompt to get the model started
@@ -159,8 +158,8 @@ def get_response(model, user_input, max_new_tokens=max_tokens):
     return response if response else "..."
 
 def run_finetuning(model):
-    print(f"  Dataset: {writingprompts_path}")
-    print(f"  Steps: {writingprompts_steps} | LR: {writingprompts_lr}")
+    print(f"Dataset: {writingprompts_path}")
+    print(f"Steps: {writingprompts_steps} | LR: {writingprompts_lr}")
 
     with open(writingprompts_path, 'r', encoding='utf-8') as f:
         text = f.read()
@@ -205,10 +204,6 @@ def chat_loop(model, label=""):
         print(f"\nStory:\n{response}\n")
 
 if __name__ == "__main__":
-    print("="*50)
-    print("  Story Generator")
-    print("="*50)
-
     if os.path.exists(finetuned_path):
         print("\nFound a fine-tuned story model.")
         choice = input("Load it? (yes/no): ").strip().lower()
@@ -223,7 +218,7 @@ if __name__ == "__main__":
     print("\nWould you like to apply fine-tuning (WritingPrompts)?")
     choice = input("(yes/no): ").strip().lower()
     if choice != 'yes':
-        print("Fine-tuning skipped. Goodbye!")
+        print("Fine-tuning skipped")
         exit()
 
     model = run_finetuning(model)
